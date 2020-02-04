@@ -1,0 +1,87 @@
+body {
+    background: linear-gradient(to right, rgba(229, 108, 178, 1) 0%,
+     rgba(219, 77, 160, 1) 38%, rgba(195, 44, 132, 1) 100%);
+     font-family: 'Poiret One', cursive;
+}
+.container {
+    box-shadow: 6px 7px 19px 1px rgba(0,0,0,0.37);
+    background-color: #ffffff;
+    border: 2px solid #efc9f5;
+    border-radius: 16px 16px 16px 16px;
+    width: 350px;
+    height: 350px;
+    margin: 100px auto;
+    text-align: center; 
+}
+
+h1 {
+    padding-top: 20px;
+    color: rgb(87, 28, 59);
+}
+
+input {
+    width:270px;
+    height: 30px;
+    margin:5px;
+    border-style: hidden;
+    border-bottom: 2px solid #efc9f5;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input:hover {
+    border-bottom: 2px solid rgba(229, 108, 178, 1); 
+    cursor: pointer;
+}
+input:focus {
+    border-style: hidden;
+    border-bottom: 2px solid rgba(190, 44, 132, 1);
+    outline: none;
+}
+input:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+button {
+    font-family: 'Poiret One', cursive;
+    border-radius: 32px 32px 32px 32px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    color: rgb(252, 249, 249);
+    padding: 7px;
+    
+}
+.signup-btn {
+    background: linear-gradient(to right, rgba(229,108,172,1) 27%, rgba(223,91,161,1) 45%,
+     rgba(219,77,153,1) 59%, rgba(200,51,131,1) 91%, rgba(195,44,125,1) 100%);
+     border-style: hidden;
+     border-bottom: 2px solid rgba(200,51,131,1);
+     padding-left:10px;
+     padding-right: 10px;
+}
+
+.cancel-btn {
+    background: linear-gradient(to right, rgba(242,156,202,1) 19%, rgba(242,156,202,1) 24%,
+     rgba(249,150,206,1) 94%, rgba(249,200,206,1) 100%);
+     border-style: hidden;
+     border-bottom: 2px solid rgba(249,200,226,1);
+     padding-left:17px;
+     padding-right: 20px;
+}
+button:hover {
+    background-color: rgb(253, 252, 249);
+    background-image: none;
+    cursor: pointer;
+}
+.signup-btn:hover {
+    color:rgba(200,51,131,1);
+}
+.cancel-btn:hover {
+    color:rgba(249,200,226,1);
+}
+button:focus {
+    outline: none;
+}
