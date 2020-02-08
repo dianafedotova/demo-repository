@@ -1,8 +1,8 @@
 body {
     font-family: 'Comfortaa';
     margin: 0;
-    font-size: 16px;
-
+    font-size: 2.5vh;
+max-height: 100vh;
 }
 
 .main-page-content {
@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 7.5vh;
     font-weight: 1000;
     margin: 0;
 }
@@ -37,7 +37,7 @@ a {
 }
 
 .main-nav li {
-    padding: 50px;
+    padding: 8vh;
 }
 
 .main-nav a:hover {
@@ -46,7 +46,7 @@ a {
 }
 
 .main-content {
-    padding: 100px;
+    padding: 16vh;
 }
 
 button {
@@ -54,9 +54,9 @@ button {
     background: linear-gradient(to bottom, rgba(29, 95, 124, 1) 0%, rgba(11, 72, 91, 1) 50%, rgba(32, 100, 126, 1) 100%);
     border: 0px solid #000000;
     box-shadow: 2px 2px 12px 2px rgba(29, 95, 124, 1);
-    margin-top: 25px;
+    margin-top: 2vh;
     padding: 10px 20px 10px 20px;
-    font-size: 1.2em;
+    font-size: 3.2vh;
     cursor: pointer;
 }
 
@@ -71,5 +71,5 @@ button:focus {
 }
 
 .credits {
-    padding-top: 10px;
+    padding-top: 2vh;
 }
