@@ -8,21 +8,19 @@
     <link rel="stylesheet" href="signup.css">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <title>Регистрация</title>
+    <script type="text/javascript" src="signup.js"></script>
 </head>
 
 <body>
-    <form class="sign-up">
+       <form name="regForm"  action="#" method="post" onsubmit="return validationEvent()" >
         <div class="container">
             <h1>Регистрация</h1>
             <br>
-           <!--  <label for="email"><b>E-mail</b></label> -->
             <input type="text" placeholder="Введите e-mail" name="email" required>
             <br>
-           <!--  <label for="psw"><b>Пароль</b></label> -->
             <input type="password" placeholder="Введите пароль" name="psw" required>
             <br>
-         <!--    <label for="psw-repeat"><b>Повторите пароль</b></label> -->
-            <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+            <input type="password" placeholder="Повторите пароль" name="pswRepeat" required>
             <br>
             <div class="confirmation">
                 <button type="button" class="cancel-btn">Отмена</button>
