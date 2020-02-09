@@ -8,6 +8,104 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
 </head>
 <body>
+    <style type="text/css">
+        body {
+            font-family: 'Comfortaa';
+            margin: 0 auto;
+            font-size: 2.5vh;
+            background-color: rgb(49, 51, 51);
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        @keyframes loading {
+            0% {
+                top: 100px;
+                left: 100px;
+                width: 0;
+                height: 0;
+                opacity: 1;
+            }
+
+            100% {
+                top: 60px;
+                left: 60px;
+                width: 80px;
+                height: 80px;
+                opacity: 0;
+            }
+        }
+
+        .loading div {
+            position: absolute;
+            border-width: 3px;
+            border-style: solid;
+            opacity: 1;
+            border-radius: 50%;
+            animation: loading 1.2s cubic-bezier(0, 0.5, 1, 1) infinite;
+        }
+
+        .loading div:nth-child(1) {
+            border-color: #ffffff
+        }
+
+        .loading div:nth-child(2) {
+            border-color: #46dff0;
+            animation-delay: -0.60s;
+        }
+
+        .spinner-ripple {
+            margin: 0;
+            width: 171px;
+            height: 171px;
+            display: inline-block;
+            overflow: hidden;
+            background: none;
+            padding-right: 3vw;
+        }
+
+        .loading {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform: translateZ(0) scale(1);
+            backface-visibility: hidden;
+            transform-origin: 0 0;
+        }
+
+        .loading div {
+            box-sizing: content-box;
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale3d(0.1, 0.1, 0.1);
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .soon {
+            text-align: center;
+            font-size: 7vh;
+            margin: 0;
+            padding-top: 30vh;
+            animation-name: zoomIn;
+            animation-duration: 3s;
+        }
+    </style>
     <p class="soon">COMING SOON</p>
+    <div class="spinner-ripple">
+        <div class="loading">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
